@@ -1,6 +1,6 @@
 %heading {
   text-align: center;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -14,5 +14,12 @@ h1 {
 h2 {
   @extend %heading;
   font-size: 3.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 3.2rem;
+}
+
+h3 {
+  @extend %heading;
+  font-size: 2.4rem;
   letter-spacing: 2px;
 }

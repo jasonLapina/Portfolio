@@ -49,6 +49,7 @@
     &:hover + figcaption {
       bottom: 2rem;
       opacity: 1;
+      visibility: visible;
     }
   }
   figcaption {
@@ -62,6 +63,7 @@
     transform: translateX(-50%);
     transition: all 0.4s;
     opacity: 0;
+    visibility: hidden;
     text-shadow: none;
   }
 }
@@ -101,7 +103,7 @@
     );
   }
   &-btn {
-    color: white;
+    color: var(--color-primary);
     text-shadow: 2px 2px 0 black;
     background-image: linear-gradient(
       to left,
@@ -115,7 +117,7 @@
     &:hover {
       background-position: right;
       color: black;
-      text-shadow: 2px 2px 0 white;
+      text-shadow: 2px 2px 0 var(--color-primary);
     }
   }
 }

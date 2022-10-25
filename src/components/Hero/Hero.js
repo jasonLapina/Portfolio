@@ -1,7 +1,7 @@
 import classes from './Hero.module.scss';
 import hero1 from '../../assets/Hero1.png';
 import hero2 from '../../assets/Hero2.png';
-import Button from '../UI/Button';
+import Button from '../UI/Button/Button';
 
 const Hero = () => {
   return (
