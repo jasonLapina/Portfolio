@@ -1,0 +1,132 @@
+.hero {
+  max-width: 200rem;
+  height: 90rem;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  &:hover > .split:hover {
+    width: 55%;
+  }
+  &:hover > .split:not(:hover) {
+    width: 45%;
+  }
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 4rem;
+  transition: all 0.3s;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-content);
+  align-content: center;
+  align-items: center;
+  row-gap: 4rem;
+  & > * {
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
+}
+
+.figure {
+  text-align: center;
+  position: relative;
+  img {
+    width: 60%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:hover + figcaption {
+      bottom: 2rem;
+      opacity: 1;
+    }
+  }
+  figcaption {
+    color: var(--color-primary);
+    background-color: black;
+    padding: 2px 4px;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s;
+    opacity: 0;
+    text-shadow: none;
+  }
+}
+
+.txt {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+
+  &--left {
+    background-color: var(--color-secondary);
+  }
+  &--right {
+    background-color: var(--color-primary);
+  }
+}
+
+.left {
+  h1 {
+    text-shadow: 2px 4px 0 black;
+  }
+  img {
+    filter: grayscale(0.4);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(255, 255, 255, 0.6)
+    );
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  }
+  color: var(--color-primary);
+  left: 0;
+  background-image: url(../../assets/Left.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-btn {
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-primary);
+    }
+  }
+}
+
+.right {
+  h1 {
+    text-shadow: 2px 4px 0 white;
+  }
+  img {
+    background: linear-gradient(131.73deg, #ff00c7 15.61%, #00f0ff 101.11%);
+  }
+  color: var(--color-secondary);
+  right: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    url(../../assets/Right.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
