@@ -3,6 +3,8 @@
 :root {
   --color-primary: rgb(255, 252, 242);
   --color-secondary: rgb(37, 36, 34);
+  --color-pink: rgb(255, 0, 221);
+  --color-blue: rgb(0, 229, 255);
 }
 
 *,
@@ -13,6 +15,19 @@
 
 html {
   font-size: 62.5%;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  overflow-x: hidden;
+  max-width: 200rem;
 }
 
 body,
@@ -33,23 +48,15 @@ ol[role='list'] {
   list-style: none;
 }
 
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  overflow-x: hidden;
-  max-width: 200rem;
-}
-
 section {
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   max-width: 170rem;
+  background-color: var(--color-primary);
+  padding: 4rem 8rem;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  /* TEMPORARY HEIGHT */
+  height: 90rem;
 }
 
 a:not([class]) {

@@ -1,0 +1,15 @@
+.about {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  h1 {
+    text-shadow: 0 2px 4px rgb(255, 0, 221);
+  }
+}
+
+.summary {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+  box-shadow: 4px 4px 1rem rgb(255, 0, 221);
+  font-size: 2rem;
+}

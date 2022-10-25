@@ -13,12 +13,10 @@ const Hero = () => {
             <img src={hero1} alt='Jason Lapina' />
             <figcaption>Jason Lapina, Dev-Designer</figcaption>
           </figure>
-          <Button className={classes['left-btn']}>About me</Button>
+          <Button className={classes['left-btn']}>Projects</Button>
           <p className={`${classes.txt} ${classes['txt--left']}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit
-            reiciendis iure totam, ut sed dolorum assumenda molestias eaque
-            laboriosam minima nemo iusto pariatur quas dolorem recusandae
-            tempora est exercitationem!
+            Hi, I'm Jason. I code maintainable, readable, and efficient
+            javaScript/React to build the Front-end of a website.
           </p>
         </div>
         <div className={`${classes.split} ${classes.right}`}>
@@ -27,16 +25,13 @@ const Hero = () => {
             <img src={hero2} alt='Jason Lapina' />
             <figcaption>Jason Lapina, Dev-Designer</figcaption>
           </figure>
-          <Button className={classes['left-btn']}>About me</Button>
+          <Button className={classes['right-btn']}>About me</Button>
           <p className={`${classes.txt} ${classes['txt--right']}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit
-            reiciendis iure totam, ut sed dolorum assumenda molestias eaque
-            laboriosam minima nemo iusto pariatur quas dolorem recusandae
-            tempora est exercitationem!
+            Hi, I'm also Jason. I can create beautiful lo-fi and hi-fi mock-ups
+            with very modern concepts and designs.
           </p>
         </div>
       </div>
-      <div className={classes.skills}></div>
     </section>
   );
 };

@@ -1,6 +1,7 @@
 .hero {
   max-width: 200rem;
   height: 90rem;
+  padding: 0;
 }
 
 .container {
@@ -29,11 +30,6 @@
   row-gap: 4rem;
   & > * {
     margin: 0 auto;
-  }
-  h1 {
-    text-align: center;
-    font-size: 4rem;
-    letter-spacing: 4px;
   }
 }
 
@@ -71,7 +67,7 @@
 }
 
 .txt {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   font-size: 2rem;
   max-width: 70rem;
   margin: 0 auto;
@@ -79,46 +75,52 @@
 
   &--left {
     background-color: var(--color-secondary);
+    box-shadow: 6px 6px 4px var(--color-pink);
   }
   &--right {
     background-color: var(--color-primary);
+    box-shadow: 6px 6px 4px var(--color-secondary);
   }
 }
 
 .left {
-  h1 {
-    text-shadow: 2px 4px 0 black;
-  }
-  img {
-    filter: grayscale(0.4);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(255, 255, 255, 0.6)
-    );
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  }
   color: var(--color-primary);
   left: 0;
   background-image: url(../../assets/Left.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  h1 {
+    color: var(--color-blue);
+    text-shadow: 2px 4px 0 var(--color-pink);
+  }
+  img {
+    background: linear-gradient(
+      131.73deg,
+      rgba(255, 0, 200, 0.6) 15.61%,
+      rgba(0, 238, 255, 0.6) 101.11%
+    );
+  }
   &-btn {
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    background-image: linear-gradient(
+      to left,
+      var(--color-pink),
+      var(--color-blue),
+      var(--color-pink)
+    );
+    background-size: 200%;
     transition: all 0.3s;
+    box-shadow: 6px 6px var(--color-secondary);
     &:hover {
-      background-color: var(--color-secondary);
-      color: var(--color-primary);
+      background-position: right;
+      color: black;
+      text-shadow: 2px 2px 0 white;
     }
   }
 }
 
 .right {
-  h1 {
-    text-shadow: 2px 4px 0 white;
-  }
-  img {
-    background: linear-gradient(131.73deg, #ff00c7 15.61%, #00f0ff 101.11%);
-  }
   color: var(--color-secondary);
   right: 0;
   background-image: linear-gradient(
@@ -129,4 +131,27 @@
     url(../../assets/Right.webp);
   background-size: cover;
   background-repeat: no-repeat;
+
+  &-btn {
+    transition: all 0.3s;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    box-shadow: 6px 6px var(--color-blue);
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+    }
+  }
+  h1 {
+    text-shadow: 2px 4px 0 var(--color-primary);
+  }
+  img {
+    filter: grayscale(0.4);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(255, 255, 255, 0.6)
+    );
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  }
 }
