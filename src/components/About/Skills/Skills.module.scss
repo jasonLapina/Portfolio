@@ -68,3 +68,13 @@
 .git {
   color: #dd4c35;
 }
+
+.aside {
+  transition: all 0.3s;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.showAside {
+  transform: scaleY(1);
+}
