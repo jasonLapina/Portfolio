@@ -50,13 +50,11 @@ ol[role='list'] {
 
 section {
   margin: 0 auto 8rem;
-  max-width: 170rem;
-  background-color: var(--color-primary);
+  max-width: 200rem;
   padding: 4rem 8rem;
   border-radius: 2rem;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
   /* TEMPORARY HEIGHT */
-  height: 90rem;
+  min-height: 90rem;
 }
 
 a:not([class]) {

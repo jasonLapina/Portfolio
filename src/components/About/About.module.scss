@@ -1,19 +1,5 @@
-.about {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  h1 {
-    text-shadow: 2px 2px rgb(255, 0, 221);
-  }
-}
-
-.summary {
-  h3 {
-    text-shadow: 1px 1px var(--color-blue);
-  }
-
-  width: 60%;
-  margin: 0 auto;
-  padding: 2rem 6rem;
-  box-shadow: 4px 4px 9px rgb(255, 0, 221);
-  font-size: 2rem;
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
