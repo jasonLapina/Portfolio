@@ -1,5 +1,7 @@
-import { useState } from 'react';
 import classes from './Education.module.scss';
+import human from '../../../assets/human.svg';
+import pinkpic from '../../../assets/pinkpic.png';
+
 const Education = () => {
   const educ = [
     {
@@ -43,7 +45,8 @@ const Education = () => {
         </ul>
       </div>
       <div className={classes['img-box']}>
-        <h1>AJSDASDJAJDAS</h1>
+        <img src={human} alt='guy coding' />
+        <img src={pinkpic} alt='jason lapina' />
       </div>
     </div>
   );

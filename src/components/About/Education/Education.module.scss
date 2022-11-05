@@ -56,6 +56,11 @@
 }
 
 .img-box {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: center;
+  gap: 4rem;
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
   border-radius: 5rem;
   background: linear-gradient(rgba(255, 0, 221, 0.2), rgba(0, 229, 255, 0.2));
