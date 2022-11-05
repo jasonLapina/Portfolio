@@ -8,11 +8,11 @@ const Skills = () => {
     <div className={classes.container}>
       <div className={classes['img-box']}>
         {logos.map((logo, i) => {
-          return <img src={logo} alt='coding logo' />;
+          return <img key={i} src={logo} alt='coding logo' />;
         })}
       </div>
       <div className={classes['txt-box']}>
-        <h2>Skills</h2>
+        <h2>Relevant Skills 🧑‍💻</h2>
         <ul>
           <li>
             Semantic <span className={classes.html}>HTML</span> for better SEO

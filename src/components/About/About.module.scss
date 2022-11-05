@@ -1,5 +1,12 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  font-size: 2.4rem;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+
+  h2 {
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
+  }
 }
