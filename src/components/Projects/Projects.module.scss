@@ -1,13 +1,13 @@
 .projects {
   display: grid;
   gap: 3.2rem;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
 }
 
 .project {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
   h3 {
-    padding: 2rem;
+    padding: 1rem 2rem;
     text-align: left;
   }
   img {
