@@ -1,7 +1,8 @@
 .projects {
   display: grid;
   gap: 3.2rem;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  padding: 4rem 8rem;
 }
 
 .project {
