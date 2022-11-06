@@ -5,13 +5,17 @@
 }
 
 .project {
+  &:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
   h3 {
     padding: 1rem 2rem;
     text-align: left;
   }
   img {
-    width: 100%;
     aspect-ratio: 2/1;
   }
 }

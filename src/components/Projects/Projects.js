@@ -2,37 +2,24 @@ import classes from './Projects.module.scss';
 import ProjectPics from '../../assets/Projects';
 
 const Projects = () => {
-  const pics = ProjectPics;
+  const pics = Object.values(ProjectPics);
+  const titles = Object.getOwnPropertyNames(ProjectPics);
+  const urls = ['https://nomnom-kappa.vercel.app/'];
 
   return (
     <section>
       <h1>My passion projects</h1>
       <div className={classes.projects}>
-        <div className={classes.project}>
-          <a href='/'>
-            <h3>nomnom</h3>
-          </a>
-
-          <img src={pics.nomnom} alt='Nomnom' />
-        </div>
-        <div className={classes.project}>
-          <a href='/'>
-            <h3>Omnifood</h3>
-          </a>
-          <img src={pics.omnifood} alt='Omnifood' />
-        </div>
-        <div className={classes.project}>
-          <a href='/'>
-            <h3>Relux</h3>
-          </a>
-          <img src={pics.relux} alt='Relux' />
-        </div>
-        <div className={classes.project}>
-          <a href='/'>
-            <h3>pig-game</h3>
-          </a>
-          <img src={pics.piggame} alt='pig-game' />
-        </div>
+        {pics.map((_, i) => {
+          return (
+            <div className={classes.project} key={i}>
+              <a href={urls[0]} target='_blank' rel='noopener noreferrer'>
+                <h3>{titles[i]}</h3>
+              </a>
+              <img src={pics[i]} alt={titles[i]} />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
