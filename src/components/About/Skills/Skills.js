@@ -1,10 +1,7 @@
 import classes from './Skills.module.scss';
 import codingLogos from '../../../assets/coding';
-import Button from '../../UI/Button/Button';
-import { useState } from 'react';
 
 const Skills = () => {
-  const [showAside, setShowAside] = useState(false);
   const logos = Object.values(codingLogos);
 
   return (
@@ -46,24 +43,14 @@ const Skills = () => {
             collaboratively.
           </li>
         </ul>
-        <Button
-          onClick={() => {
-            setShowAside((prev) => !prev);
-          }}
-        >
-          Additional
-        </Button>
-
-        <aside
-          className={`${classes.aside} ${showAside ? classes.showAside : ''}`}
-        >
-          Side note! on top of these skills, I also have very good english
-          communication as I have previously worked for a US-based company as a
-          <span> Virtual Assistant</span>. I also love optimization in terms of{' '}
-          <span>performance</span> and <span>code-readability</span>. I design
-          my own projects using
+        <aside className={classes.aside}>
+          <strong>Side note!</strong> On top of these skills, I also have very
+          good english communication as I have previously worked for a US-based
+          company as a<span> Virtual Assistant</span>. I also love optimization
+          in terms of <span>performance</span> and <span>code-readability</span>
+          . I design my own projects using
           <span> Figma</span>, optimize images using <span>Squoosh</span>, and
-          use a lot more tools to make an optimized and better-looking website!
+          use a lot more tools to make an optimized and good-looking website!
         </aside>
       </div>
     </div>
