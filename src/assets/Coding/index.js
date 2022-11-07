@@ -11,6 +11,8 @@ const CodingLogos = {
   nextjs: require('./nextjs.svg').default,
   git: require('./git.svg').default,
   gitHub: require('./github.svg').default,
+  mongodb: require('./mongodb.svg').default,
+  firebase: require('./firebase.svg').default,
 };
 
 export default CodingLogos;

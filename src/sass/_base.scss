@@ -11,12 +11,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 62.5%;
-}
-html:focus-within {
   scroll-behavior: smooth;
 }
 
@@ -29,19 +29,7 @@ body {
   overflow-x: hidden;
   max-width: 200rem;
   color: #333;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+  margin: 0 auto;
 }
 
 ul[role='list'],
@@ -54,8 +42,6 @@ section {
   max-width: 200rem;
   padding: 4rem 8rem;
   border-radius: 2rem;
-  /* TEMPORARY HEIGHT */
-  min-height: 90rem;
 }
 
 a:not([class]) {

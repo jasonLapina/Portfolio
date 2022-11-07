@@ -1,0 +1,12 @@
+.img-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 3.2rem;
+  padding: 4rem 8rem;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+  border-radius: 5rem;
+  background: linear-gradient(rgba(255, 0, 221, 0.2), rgba(0, 229, 255, 0.2));
+  img {
+    width: 80%;
+  }
+}
