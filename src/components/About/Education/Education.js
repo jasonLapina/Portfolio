@@ -6,7 +6,7 @@ const Education = () => {
   const educ = [
     {
       title: 'Summary 📜',
-      text: `I used Udemy's paid courses to teach myself the necessary skills to become a React Front-End Developer. Certificates are available upon request.`,
+      text: `I studied Economics in the University of the Philippines but went on to pursue my long-time passion for technology which led me to web development.`,
     },
 
     {
@@ -15,7 +15,7 @@ const Education = () => {
     },
     {
       title: 'Tertiary Education 🐃',
-      text: `I studied Agricultural Economics in the University of the Philippines, Los Baños but decided to pursue my real passion for technology.`,
+      text: `I studied Bachelors of Science in Agricultural and Applied Economics in the University of the Philippines, Los Baños.`,
     },
     {
       title: 'Secondary Education 🏫',
