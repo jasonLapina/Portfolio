@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
+
   gap: 7.2rem;
 }
 .txt-box {
@@ -39,7 +39,8 @@
 
 .react {
   color: rgb(97, 218, 251);
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px 6px;
 }
 
 .rdx {
@@ -60,10 +61,11 @@
 
 .list {
   transition: transform 0.3s;
+  padding: 1rem 2rem;
 }
 
 .aside {
-  padding: 1rem 6rem;
+  padding: 2.5rem 5rem;
   position: absolute;
   top: 0;
   transform: translateX(100%);
@@ -93,10 +95,10 @@
 
 @keyframes bounceLeft {
   from {
-    transform: translate(-10%, -50%);
+    transform: translate(50%, -50%);
   }
   to {
-    transform: translate(0, -50%);
+    transform: translate(30%, -50%);
   }
 }
 

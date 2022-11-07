@@ -39,6 +39,7 @@
 
 .active .btn {
   rotate: 180deg;
+  background-color: var(--color-blue);
 }
 
 .btn {
@@ -56,10 +57,12 @@
 }
 
 .img-box {
-  height: 57rem;
+  max-height: 50rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: center;
+  margin: 4rem 0 4rem;
+  padding: 2rem 4rem;
   gap: 4rem;
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
   border-radius: 5rem;
