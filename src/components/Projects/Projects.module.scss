@@ -6,6 +6,7 @@
 }
 
 .project {
+  position: relative;
   &:first-child {
     grid-column: span 2;
     grid-row: span 2;
@@ -15,8 +16,37 @@
   h3 {
     padding: 1rem 2rem;
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   img {
     aspect-ratio: 2/1;
+    transition: filter 0.3s;
   }
+  &:hover .description {
+    transform: scaleX(1);
+  }
+  &:hover img {
+    filter: brightness(0.4);
+  }
+  &:hover {
+    h3 {
+      color: var(--color-pink);
+    }
+  }
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  font-weight: 600;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
 }
