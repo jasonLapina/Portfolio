@@ -1,6 +1,7 @@
 import classes from './Skills.module.scss';
 import { useState } from 'react';
-import Logos from './Logos';
+import CodingLogos from './CodingLogos';
+
 const Skills = () => {
   const [showAside, setShowAside] = useState(false);
   const switchHandler = () => {
@@ -8,7 +9,7 @@ const Skills = () => {
   };
   return (
     <div className={classes.container}>
-      <Logos />
+      <CodingLogos />
       <div className={classes['txt-box']}>
         <h2>Relevant Skills 🧑‍💻</h2>
         <div className={classes.skills}>
