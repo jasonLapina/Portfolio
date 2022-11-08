@@ -1,5 +1,4 @@
 import classes from './Skills.module.scss';
-import Logos from './Logos';
 import { useState } from 'react';
 
 const Skills = () => {
@@ -10,7 +9,7 @@ const Skills = () => {
 
   return (
     <div className={classes.container}>
-      <Logos />
+      {/* <Logos /> */}
       <div className={classes['txt-box']}>
         <h2>Relevant Skills 🧑‍💻</h2>
         <div className={classes.skills}>
