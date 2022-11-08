@@ -1,5 +1,4 @@
 import classes from './Skills.module.scss';
-
 import Logos from './Logos';
 import { useState } from 'react';
 
@@ -21,6 +20,7 @@ const Skills = () => {
               showAside ? classes.hide : classes.show
             }`}
           >
+            <li>Figma for creating wireframes/mockups</li>
             <li>
               Semantic <span className={classes.html}>HTML</span> for better SEO
               and for screen-readers.

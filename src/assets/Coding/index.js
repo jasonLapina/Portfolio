@@ -1,4 +1,5 @@
 const CodingLogos = {
+  figma: require('./figma.svg').default,
   html: require('./html.svg').default,
   css: require('./css.svg').default,
   bootstrap: require('./bootstrap.svg').default,
