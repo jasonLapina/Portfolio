@@ -1,7 +1,7 @@
-import logos from '../../../assets/coding/';
-import classes from './CodingLogos.module.scss';
-const CodingLogos = () => {
-  const icons = Object.values(logos);
+import CodingLogos from '../../../assets/Coding';
+import classes from './Logos.module.scss';
+const Logos = () => {
+  const icons = Object.values(CodingLogos);
   console.log(icons);
   return (
     <div className={classes['img-box']}>
@@ -12,4 +12,4 @@ const CodingLogos = () => {
   );
 };
 
-export default CodingLogos;
+export default Logos;
