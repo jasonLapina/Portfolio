@@ -11,10 +11,10 @@ const Skills = () => {
 
   return (
     <div className={classes.container}>
-      <Logos />
       <div className={classes['txt-box']}>
         <h2>Relevant Skills 🧑‍💻</h2>
         <div className={classes.skills}>
+          <Logos />
           <ul
             className={`${classes.list} ${
               showAside ? classes.hide : classes.show
