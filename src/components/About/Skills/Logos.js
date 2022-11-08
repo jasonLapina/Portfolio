@@ -1,5 +1,5 @@
 import classes from './Logos.module.scss';
-import codingLogos from '../../../assets/coding/';
+import codeLogos from '../../../assets/coding';
 const Logos = () => {
   const logos = Object.values(codeLogos);
 
