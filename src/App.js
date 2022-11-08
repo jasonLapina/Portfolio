@@ -3,7 +3,11 @@ import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
 import Projects from './components/Projects/Projects';
+<<<<<<< HEAD
 
+=======
+import 'bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> a4403b6 (deployment bug fix)
 function App() {
   return (
     <main>
