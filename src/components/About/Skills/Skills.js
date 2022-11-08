@@ -1,16 +1,12 @@
 import classes from './Skills.module.scss';
 import { useState } from 'react';
-
 const Skills = () => {
   const [showAside, setShowAside] = useState(false);
-
   const switchHandler = () => {
     setShowAside((prev) => !prev);
   };
-
   return (
     <div className={classes.container}>
-      {/* <Logos /> */}
       <div className={classes['txt-box']}>
         <h2>Relevant Skills 🧑‍💻</h2>
         <div className={classes.skills}>
