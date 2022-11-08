@@ -1,7 +1,9 @@
 import classes from './Logos.module.scss';
-import codingLogos from '../../../assets/coding';
+import codeLogos from '../../../assets/coding';
 const Logos = () => {
-  const logos = Object.values(codingLogos);
+  const logos = Object.values(codeLogos);
+
+  console.log(logos);
   return (
     <div className={classes['img-box']}>
       {logos.map((logo, i) => {
