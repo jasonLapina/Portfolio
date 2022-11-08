@@ -1,13 +1,23 @@
+@use '../../../sass/mixins' as *;
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-
   gap: 7.2rem;
+  @include query(tabLand) {
+    gap: 2.4rem;
+  }
 }
+
+.skills {
+  position: relative;
+  text-align: center;
+}
+
 .txt-box {
   h2 {
     background: linear-gradient(to right, var(--color-blue), var(--color-pink));
+    margin-bottom: 2.4rem;
   }
   span {
     font-weight: bold;
@@ -55,25 +65,21 @@
   color: #dd4c35;
 }
 
-.skills {
-  position: relative;
-}
-
 .list {
   transition: transform 0.3s;
   padding: 1rem 2rem;
 }
 
 .aside {
-  padding: 2.5rem 5rem;
+  padding-inline: 1rem max(2.2vw, 2rem);
   position: absolute;
-  top: 0;
-  transform: translateX(100%);
   transition: transform 0.3s;
+  top: 10%;
 }
 
 .btn {
   position: absolute;
+  margin-left: 1rem;
   z-index: 2;
   background: linear-gradient(
     to right bottom,
@@ -109,5 +115,6 @@
 
 .hide {
   opacity: 0;
+  visibility: hidden;
   transform: translateX(100%);
 }

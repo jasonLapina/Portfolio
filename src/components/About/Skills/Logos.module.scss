@@ -1,14 +1,14 @@
 .img-box {
   display: grid;
-  max-height: 41.1rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 3.2rem;
-  padding: 4rem 8rem;
-  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+  max-height: 50rem;
+  grid-template-columns: repeat(auto-fit, minmax(8.8rem, 1fr));
+  gap: 2rem;
+  padding: max(2vw, 1rem) 7rem max(2vw, 1rem) max(2vw, 1rem);
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
   border-radius: 5rem;
   background: linear-gradient(rgba(255, 0, 221, 0.2), rgba(0, 229, 255, 0.2));
   margin: auto 0;
   img {
-    width: 80%;
+    width: 90%;
   }
 }

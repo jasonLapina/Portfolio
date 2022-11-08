@@ -13,7 +13,10 @@ const Hero = () => {
             <img src={hero1} alt='Jason Lapina' />
             <figcaption>Jason Lapina, Dev-Designer</figcaption>
           </figure>
-          <Button className={classes['left-btn']}>Projects</Button>
+          <a href='#projects'>
+            <Button className={classes['left-btn']}>Projects</Button>
+          </a>
+
           <p className={`${classes.txt} ${classes['txt--left']}`}>
             Hi, I'm Jason. I code maintainable, readable, and efficient
             javaScript/React to build the Front-end of a website.
@@ -25,7 +28,9 @@ const Hero = () => {
             <img src={hero2} alt='Jason Lapina' />
             <figcaption>Jason Lapina, Dev-Designer</figcaption>
           </figure>
-          <Button className={classes['right-btn']}>About me</Button>
+          <a href='#about'>
+            <Button className={classes['right-btn']}>About me</Button>
+          </a>
           <p className={`${classes.txt} ${classes['txt--right']}`}>
             Hi, I'm also Jason. I can create beautiful lo-fi and hi-fi mock-ups
             with very modern concepts and designs.

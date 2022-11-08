@@ -5,7 +5,7 @@ import Skills from './Skills/Skills';
 const About = () => {
   return (
     <section id='about' className={classes.about}>
-      <h1>About Me heehee</h1>
+      <h1>About Me</h1>
       <div className={classes.container}>
         <Skills />
         <Education />
