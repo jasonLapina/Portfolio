@@ -1,3 +1,10 @@
-.nav {
+.container {
   font-size: 2rem;
+  display: flex;
+  margin-left: 4.8rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
 }

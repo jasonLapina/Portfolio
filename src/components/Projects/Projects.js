@@ -26,7 +26,7 @@ const Projects = () => {
   ];
 
   return (
-    <section>
+    <section id='projects'>
       <h1>My passion projects</h1>
       <div className={classes.projects}>
         {pics.map((_, i) => {

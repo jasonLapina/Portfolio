@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 const Skills = () => {
   const [showAside, setShowAside] = useState(false);
-
   const switchHandler = () => {
     setShowAside((prev) => !prev);
   };

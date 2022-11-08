@@ -5,7 +5,7 @@ import Button from '../UI/Button/Button';
 
 const Hero = () => {
   return (
-    <section className={classes.hero}>
+    <section id='home' className={classes.hero}>
       <div className={classes.container}>
         <div className={`${classes.split} ${classes.left}`}>
           <h1>FRONT-END DEVELOPER</h1>
