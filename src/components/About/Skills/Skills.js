@@ -27,9 +27,10 @@ const Skills = () => {
             </li>
             <li>
               Advanced <span className={classes.css}>CSS</span>/
-              <span className={classes.sass}>SaSS</span> with or without
-              <span className={classes.bootstrap}> Bootstrap</span>.
+              <span className={classes.sass}>SaSS</span> ( w/ or w/o{' '}
+              <span className={classes.bootstrap}> Bootstrap</span>).
             </li>
+
             <li>
               <span className={classes.js}>JavaScript</span> &{' '}
               <span className={classes.ts}>TypeScript</span> proficiency.

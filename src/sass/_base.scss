@@ -61,6 +61,9 @@ section {
   @include query(desktopSmall) {
     padding-inline: 3rem;
   }
+  @include query(tabPort) {
+    padding-inline: 1rem;
+  }
 }
 
 img,

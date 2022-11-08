@@ -7,11 +7,18 @@
   @include query(tabLand) {
     gap: 2.4rem;
   }
+  @include query(tabPort) {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
 }
 
 .skills {
   position: relative;
   text-align: center;
+  @include query(tabPort) {
+    text-align: center;
+  }
 }
 
 .txt-box {
@@ -24,6 +31,70 @@
   }
 }
 
+.list {
+  transition: transform 0.3s;
+  padding: 1rem 2rem;
+  @include query(tabPort) {
+    padding: 0 1.6rem;
+  }
+}
+
+.aside {
+  padding-inline: 1rem max(2.2vw, 2rem);
+  position: absolute;
+  transition: transform 0.3s;
+  top: 10%;
+  @include query(tabPort) {
+    padding-inline: 12rem;
+  }
+}
+
+.btn {
+  position: absolute;
+  margin-left: 1rem;
+  z-index: 2;
+  background: linear-gradient(
+    to right bottom,
+    var(--color-pink),
+    var(--color-blue)
+  );
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  animation: bounceLeft 0.4s infinite alternate;
+  @include query(tabPort) {
+    right: 6rem;
+  }
+}
+
+@keyframes bounceLeft {
+  from {
+    transform: translate(50%, -50%);
+  }
+  to {
+    transform: translate(30%, -50%);
+  }
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+/////////////// FONT-COLORS ////////////////////
 .html {
   color: rgb(241, 102, 42);
 }
@@ -63,58 +134,4 @@
 
 .git {
   color: #dd4c35;
-}
-
-.list {
-  transition: transform 0.3s;
-  padding: 1rem 2rem;
-}
-
-.aside {
-  padding-inline: 1rem max(2.2vw, 2rem);
-  position: absolute;
-  transition: transform 0.3s;
-  top: 10%;
-}
-
-.btn {
-  position: absolute;
-  margin-left: 1rem;
-  z-index: 2;
-  background: linear-gradient(
-    to right bottom,
-    var(--color-pink),
-    var(--color-blue)
-  );
-  top: 50%;
-  right: 0;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  animation: bounceLeft 0.4s infinite alternate;
-}
-
-@keyframes bounceLeft {
-  from {
-    transform: translate(50%, -50%);
-  }
-  to {
-    transform: translate(30%, -50%);
-  }
-}
-
-.show {
-  opacity: 1;
-  transform: translate(0);
-}
-
-.hide {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(100%);
 }
