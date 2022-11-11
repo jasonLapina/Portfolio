@@ -56,7 +56,7 @@ ul {
 section {
   margin: 0 auto 8rem;
   max-width: 200rem;
-  padding-inline: max(5vw, 8px);
+  padding-inline: 5.6rem;
   border-radius: 2rem;
   @include query(desktopSmall) {
     padding-inline: 3rem;

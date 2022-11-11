@@ -1,13 +1,20 @@
+@use '../../sass/mixins' as *;
+
 .hero {
   max-width: 200rem;
-  height: 90rem;
+  height: 93rem;
   padding: 0;
+  @include query(tabPort) {
+    margin-top: 3.4rem;
+    height: auto;
+  }
 }
 
 .container {
   position: relative;
   height: 100%;
   width: 100%;
+
   &:hover > .split:hover {
     width: 55%;
   }
@@ -29,6 +36,11 @@
   row-gap: 4rem;
   & > * {
     margin: 0 auto;
+  }
+  @include query(tabPort) {
+    position: static;
+    width: 100%;
+    padding: 3.2rem 0;
   }
 }
 
