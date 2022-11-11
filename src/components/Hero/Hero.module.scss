@@ -15,11 +15,13 @@
   height: 100%;
   width: 100%;
 
-  &:hover > .split:hover {
-    width: 55%;
-  }
-  &:hover > .split:not(:hover) {
-    width: 45%;
+  @media screen and (min-width: 56.25em) {
+    &:hover > .split:hover {
+      width: 55%;
+    }
+    &:hover > .split:not(:hover) {
+      width: 45%;
+    }
   }
 }
 
