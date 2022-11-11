@@ -1,3 +1,4 @@
+@use '../../../sass/mixins' as *;
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -6,6 +7,9 @@
   h2 {
     background: linear-gradient(to left, var(--color-blue), var(--color-pink));
     margin-bottom: 2.4rem;
+  }
+  @include query(tabPort) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -68,4 +72,8 @@
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
   border-radius: 5rem;
   background: linear-gradient(rgba(255, 0, 221, 0.2), rgba(0, 229, 255, 0.2));
+  @include query(tabPort) {
+    clip-path: none;
+    height: auto;
+  }
 }
