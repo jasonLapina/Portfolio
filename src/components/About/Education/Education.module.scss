@@ -5,6 +5,7 @@
   gap: 7.2rem;
   h2 {
     background: linear-gradient(to left, var(--color-blue), var(--color-pink));
+    margin-bottom: 2.4rem;
   }
 }
 
@@ -57,7 +58,7 @@
 }
 
 .img-box {
-  max-height: 50rem;
+  height: 48rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: center;
