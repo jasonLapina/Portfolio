@@ -11,7 +11,7 @@ const Hero = () => {
           <h1>React DEVELOPER</h1>
           <figure className={classes.figure}>
             <img src={hero1} alt='Jason Lapina' />
-            <figcaption>Jason Lapina, Dev-Designer</figcaption>
+            <figcaption>Jason Lapina, F.E. Developer</figcaption>
           </figure>
           <a href='#projects'>
             <Button className={classes['left-btn']}>Projects</Button>
@@ -26,7 +26,7 @@ const Hero = () => {
           <h1>UI/UX DESIGNER</h1>
           <figure className={classes.figure}>
             <img src={hero2} alt='Jason Lapina' />
-            <figcaption>Jason Lapina, Dev-Designer</figcaption>
+            <figcaption>Jason Lapina, UX/UI Designer</figcaption>
           </figure>
           <a href='#about'>
             <Button className={classes['right-btn']}>About me</Button>
