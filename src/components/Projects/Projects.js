@@ -5,7 +5,9 @@ const Projects = () => {
   // THUMBNAILS
   const pics = Object.values(ProjectPics);
   // PROJECT TITLES
-  const titles = Object.getOwnPropertyNames(ProjectPics);
+  const titles = Object.getOwnPropertyNames(ProjectPics).map((title) =>
+    title.replace('_', ' ')
+  );
   // APPEND VERCEL URL, GITHUB URL, AND COPY OF NEW PROJECT HERE
   const details = [
     {
