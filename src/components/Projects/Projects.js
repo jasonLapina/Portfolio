@@ -31,8 +31,8 @@ const Projects = () => {
       copy: 'Local 2 player dice-game.',
     },
     {
-      vercel: 'https://sass-prac-2.vercel.app/',
-      github: 'https://github.com/jasonLapina/sass-prac-2',
+      vercel: 'https://rasurv.vercel.app/',
+      github: 'https://github.com/jasonLapina/Rasurv',
       copy: 'Hotel reservation web app.',
     },
     {
@@ -46,8 +46,8 @@ const Projects = () => {
       copy: 'Number guessing game.',
     },
     {
-      vercel: 'https://sass-prac-3.vercel.app/',
-      github: 'https://github.com/jasonLapina/sass-prac-3',
+      vercel: 'https://hanap-bahay.vercel.app/',
+      github: 'https://github.com/jasonLapina/Hanap-bahay',
       copy: 'Real estate website.',
     },
   ];
