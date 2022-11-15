@@ -16,15 +16,16 @@ const Projects = () => {
       copy: 'Food delivery web app.',
     },
     {
+      vercel: 'https://laps-flix.vercel.app/',
+      github: 'https://github.com/jasonLapina/movies',
+      copy: 'Movies browsing app.',
+    },
+    {
       vercel: 'https://project-relux.vercel.app/',
       github: 'https://github.com/jasonLapina/Project-Relux',
       copy: 'Villa reservation website.',
     },
-    {
-      vercel: 'https://omnifood-next-js-sass.vercel.app/',
-      github: 'https://github.com/jasonLapina/Project-Omnifood',
-      copy: 'Food subscription website.',
-    },
+
     {
       vercel: 'https://pig-game-blush.vercel.app/',
       github: 'https://github.com/jasonLapina/pig-game',
@@ -45,10 +46,16 @@ const Projects = () => {
       github: 'https://github.com/jasonLapina/number-game',
       copy: 'Number guessing game.',
     },
+
     {
       vercel: 'https://hanap-bahay.vercel.app/',
       github: 'https://github.com/jasonLapina/Hanap-bahay',
       copy: 'Real estate website.',
+    },
+    {
+      vercel: 'https://omnifood-next-js-sass.vercel.app/',
+      github: 'https://github.com/jasonLapina/Project-Omnifood',
+      copy: 'Food subscription website.',
     },
   ];
 
