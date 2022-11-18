@@ -54,7 +54,7 @@ const Skills = () => {
     {
       title: 'testing',
       technology: [jest],
-      text: 'Jest for testing react apps',
+      text: 'Jest for testing react apps.',
     },
   ];
 
