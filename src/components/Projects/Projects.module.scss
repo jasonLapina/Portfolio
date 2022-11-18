@@ -10,9 +10,13 @@
   position: relative;
   border-radius: 2rem;
   overflow: hidden;
+  background-color: var(--color-secondary);
+  box-shadow: 6px 6px 1rem var(--color-pink);
   &:first-child {
-    grid-column: span 2;
-    grid-row: span 2;
+    @media screen and (min-width: 56.25em) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
     &::after {
       content: ' - FEATURED PROJECT - ';
       font-size: 3.2rem;
@@ -22,7 +26,7 @@
       justify-content: center;
     }
   }
-  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.24);
+
   h3 {
     padding: 1rem 2rem;
     text-align: left;
@@ -30,7 +34,6 @@
     align-items: center;
     gap: 8px;
     font-weight: bold;
-    color: #444;
     transition: color 0.3s;
   }
   img {
@@ -53,9 +56,10 @@
 .description {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -1%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(6, 6, 6, 0.8);
+  border-radius: 1rem;
   font-weight: 600;
   font-size: 2.4rem;
   padding: 1rem 1.5rem;
@@ -66,8 +70,10 @@
   font-weight: 400;
 
   a {
-    color: #444;
     font-size: 4rem;
     line-height: 0;
+    &:hover {
+      color: var(--color-pink);
+    }
   }
 }

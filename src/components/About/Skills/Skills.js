@@ -1,71 +1,79 @@
 import classes from './Skills.module.scss';
-import { useState } from 'react';
-import Logos from './Logos';
-
+import codingLogos from '../../../assets/Coding/';
+import Tech from './Tech';
 const Skills = () => {
-  const [showAside, setShowAside] = useState(false);
-  const switchHandler = () => {
-    setShowAside((prev) => !prev);
-  };
-  return (
-    <div className={classes.container}>
-      <Logos />
-      <div className={classes['txt-box']}>
-        <h2>Relevant Skills 🧑‍💻</h2>
-        <div className={classes.skills}>
-          <ul
-            className={`${classes.list} ${
-              showAside ? classes.hide : classes.show
-            }`}
-          >
-            <li>
-              <span>Figma</span> for wireframes/mockups.
-            </li>
-            <li>
-              Semantic <span className={classes.html}>HTML5</span> for better
-              SEO.
-            </li>
-            <li>
-              Advanced <span className={classes.css}>CSS</span>/
-              <span className={classes.sass}>SaSS</span> ( w/ or w/o{' '}
-              <span className={classes.bootstrap}> Bootstrap</span>).
-            </li>
+  const {
+    html,
+    css,
+    javaScript,
+    ts,
+    git,
+    gitHub,
+    figma,
+    sass,
+    bootstrap,
+    react,
+    nextjs,
+    redux,
+    jest,
+    mongodb,
+    firebase,
+  } = codingLogos;
+  const core = [html, css, javaScript, ts];
+  const design = [figma, sass];
+  const frameWorks = [react, redux, nextjs, bootstrap];
+  const versionControl = [git, gitHub];
+  const dataBase = [firebase, mongodb];
 
-            <li>
-              <span className={classes.js}>JavaScript</span> &{' '}
-              <span className={classes.ts}>TypeScript</span> proficiency.
-            </li>
-            <li>
-              <span className={classes.react}>React</span> is my most used
-              library.
-            </li>
-            <li>
-              Experienced in <span className={classes.rdx}>Redux</span>,{' '}
-              <span className={classes.jest}>Jest</span>, and,{' '}
-              <span>NextJs</span>.
-            </li>
-            <li>
-              <span className={classes.git}>Git</span> and <span>GitHub</span>{' '}
-              proficiency.
-            </li>
-          </ul>
-          <button onClick={switchHandler} className={classes.btn}>
-            <ion-icon name='chevron-forward-outline' />
-          </button>
-          <aside
-            className={`${classes.aside} ${
-              showAside ? classes.show : classes.hide
-            }`}
-          >
-            <strong>Side note!</strong> On top of these skills, I also have very
-            good english communication and teamwork as I have previously worked
-            for a US-based company as a<span> Virtual Assistant</span>. I also
-            love optimization in terms of <span>performance</span> and{' '}
-            <span>code-readability</span> and <span>maintainability</span>.
-          </aside>
-        </div>
+  const technologies = [
+    {
+      title: 'Core',
+      technology: core,
+      text: 'Semantic HTML5, Advanced CSS3, JavaScript profiency, & TypeScript.',
+    },
+    {
+      title: 'design',
+      technology: design,
+      text: 'Figma for wireframes & Sass for easier styling.',
+    },
+    {
+      title: 'frameWorks',
+      technology: frameWorks,
+      text: 'Specialized in React & Redux Toolkit, NextJS proficiency, able to use Bootstrap.',
+    },
+    {
+      title: 'Version Control',
+      technology: versionControl,
+      text: 'Git and GitHub for version control and collabation.',
+    },
+    {
+      title: 'dataBase',
+      technology: dataBase,
+      text: 'Firebase and mongoDB knowledge for backend/API concerns.',
+    },
+    {
+      title: 'testing',
+      technology: [jest],
+      text: 'Jest for testing react apps',
+    },
+  ];
+
+  return (
+    <section>
+      <h2 className={classes.header}>Technologies</h2>
+      <div className={classes.technologies}>
+        {technologies.map((tech, i) => {
+          return (
+            <Tech
+              key={i}
+              title={tech.title}
+              technology={tech.technology}
+              text={tech.text}
+            />
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 };
 

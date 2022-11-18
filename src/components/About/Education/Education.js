@@ -5,21 +5,21 @@ import pinkpic from '../../../assets/pinkpic.png';
 const Education = () => {
   const educ = [
     {
-      title: 'Summary 📜',
+      title: 'TL;DR 📜',
       text: `I studied Economics in the University of the Philippines but went on to pursue my long-time passion for technology which led me to web development.`,
     },
 
     {
-      title: 'Self-education journey 👨‍💻',
+      title: 'Self-education 👨‍💻',
       text: `I used Udemy's paid courses to teach myself the necessary skills to become a React Front-End Developer. Certificates are available upon request.`,
     },
     {
-      title: 'Tertiary Education 🐃',
+      title: 'Tertiary 🐃',
       text: `I studied Bachelors of Science in Agricultural and Applied Economics in the University of the Philippines, Los Baños.`,
     },
     {
-      title: 'Secondary Education 🏫',
-      text: `I went to Santa Rosa Science and Technology High School and took STEM as my course for senior high.`,
+      title: 'Secondary 🏫',
+      text: `I studied STEM (Science, Engineering, and Mathematics) at Sta. Rosa Science and Technology High School`,
     },
   ];
   const toggleActive = (e) => {

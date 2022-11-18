@@ -4,9 +4,8 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 7.2rem;
-  h2 {
-    background: linear-gradient(to left, var(--color-blue), var(--color-pink));
-    margin-bottom: 2.4rem;
+  @include query(tabLand) {
+    gap: 2rem;
   }
   @include query(tabPort) {
     grid-template-columns: 1fr;
@@ -22,7 +21,7 @@
 }
 
 .entry {
-  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.2);
+  background-color: var(--color-secondary);
   padding: 2rem 4rem;
   overflow: hidden;
   transition: all 1s;
@@ -64,16 +63,18 @@
 .img-box {
   height: 48rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   align-items: center;
-  margin: 4rem 0 4rem;
+  margin: 8rem 0 4rem;
   padding: 2rem 4rem;
   gap: 4rem;
-  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
   border-radius: 5rem;
   background: linear-gradient(rgba(255, 0, 221, 0.2), rgba(0, 229, 255, 0.2));
   @include query(tabPort) {
-    clip-path: none;
     height: auto;
+    img {
+      width: 60%;
+    }
   }
 }

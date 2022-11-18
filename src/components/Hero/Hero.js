@@ -8,7 +8,7 @@ const Hero = () => {
     <section id='home' className={classes.hero}>
       <div className={classes.container}>
         <div className={`${classes.split} ${classes.left}`}>
-          <h1>React DEVELOPER</h1>
+          <h1>DEVELOPER</h1>
           <figure className={classes.figure}>
             <img src={hero1} alt='Jason Lapina' />
             <figcaption>Jason Lapina, F.E. Developer</figcaption>
@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={`${classes.split} ${classes.right}`}>
-          <h1>UI/UX DESIGNER</h1>
+          <h1>DESIGNER</h1>
           <figure className={classes.figure}>
             <img src={hero2} alt='Jason Lapina' />
             <figcaption>Jason Lapina, UX/UI Designer</figcaption>

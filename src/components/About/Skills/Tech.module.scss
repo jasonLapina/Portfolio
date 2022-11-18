@@ -1,0 +1,35 @@
+.wrapper {
+  background-color: var(--color-secondary);
+  padding: 3.2rem 0;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem var(--color-blue);
+  h3 {
+    color: var(--color-primary);
+    text-shadow: 1px 1px var(--color-blue);
+    margin-bottom: 3.2rem;
+  }
+}
+
+.logos {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 4rem;
+  img {
+    aspect-ratio: 1/1;
+    width: 8rem;
+    box-shadow: 1px 1px 4px white;
+    border-radius: 1rem;
+  }
+}
+
+.text {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
