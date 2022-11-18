@@ -18,7 +18,7 @@ const Hero = () => {
           </a>
 
           <p className={`${classes.txt} ${classes['txt--left']}`}>
-            Hi, I'm Jason. I mainly use React JS to develop the front-end of a
+            Hi, I'm Jason. I mainly use React JS to develop the front end of a
             website/web-app.
           </p>
         </div>
