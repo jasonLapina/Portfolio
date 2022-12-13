@@ -1,97 +1,53 @@
+import { useEffect, useState } from 'react';
 import classes from './Projects.module.scss';
-import ProjectPics from '../../assets/Projects';
 
 const Projects = () => {
-  // THUMBNAILS
-  const pics = Object.values(ProjectPics);
-  // PROJECT TITLES
-  const titles = Object.getOwnPropertyNames(ProjectPics).map((title) =>
-    title.replace('_', ' ')
-  );
-  // APPEND VERCEL URL, GITHUB URL, AND COPY OF NEW PROJECT HERE
-  const details = [
-    {
-      vercel: 'https://nomnom-kappa.vercel.app/',
-      github: 'https://github.com/jasonLapina/nomnom',
-      copy: 'Food delivery web app.',
-    },
-    {
-      vercel: 'https://laps-flix.vercel.app/',
-      github: 'https://github.com/jasonLapina/movies',
-      copy: 'Movies browsing app.',
-    },
-    {
-      vercel: 'https://project-relux.vercel.app/',
-      github: 'https://github.com/jasonLapina/Project-Relux',
-      copy: 'Villa reservation website.',
-    },
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const res = await fetch(
+        'https://portfolio-d8598-default-rtdb.asia-southeast1.firebasedatabase.app/projects.json'
+      );
+      const data = await res.json();
 
-    {
-      vercel: 'https://pig-game-blush.vercel.app/',
-      github: 'https://github.com/jasonLapina/pig-game',
-      copy: 'Local 2 player dice-game.',
-    },
-    {
-      vercel: 'https://rasurv.vercel.app/',
-      github: 'https://github.com/jasonLapina/Rasurv',
-      copy: 'Hotel reservation web app.',
-    },
-    {
-      vercel: 'https://to-do-five-azure.vercel.app/',
-      github: 'https://github.com/jasonLapina/to-do',
-      copy: 'To-do web app.',
-    },
-    {
-      vercel: 'https://number-game-eight.vercel.app/',
-      github: 'https://github.com/jasonLapina/number-game',
-      copy: 'Number guessing game.',
-    },
+      const fetchedProjs = Object.values(data).reverse();
+      setProjects(fetchedProjs);
+    };
+    fetchProjects();
+  }, []);
+  console.log(projects);
 
-    {
-      vercel: 'https://hanap-bahay.vercel.app/',
-      github: 'https://github.com/jasonLapina/Hanap-bahay',
-      copy: 'Real estate website.',
-    },
-    {
-      vercel: 'https://omnifood-next-js-sass.vercel.app/',
-      github: 'https://github.com/jasonLapina/Project-Omnifood',
-      copy: 'Food subscription website.',
-    },
-  ];
+  const renderProjects = projects.map((proj, i) => {
+    const { title, github, pic, text, link } = proj;
+    return (
+      <div
+        className={`${classes.project} ${
+          title === 'Nomnom' ? classes.featured : ''
+        }`}
+        key={i}
+      >
+        <a href={link} target='_blank' rel='noopener noreferrer'>
+          <h3>
+            {title} <ion-icon name='enter-outline' />
+          </h3>
+        </a>
+        <a href={link}>
+          <img src={pic} alt={title} />
+        </a>
+        <div className={classes.description}>
+          <p>{text}</p>
+          <a href={github} target='_blank' rel='noopener noreferrer'>
+            <ion-icon name='logo-github' />
+          </a>
+        </div>
+      </div>
+    );
+  });
 
   return (
     <section id='projects'>
-      <h1>My passion projects</h1>
-      <div className={classes.projects}>
-        {pics.map((_, i) => {
-          return (
-            <div className={classes.project} key={i}>
-              <a
-                href={details[i].vercel}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <h3>
-                  {titles[i]} <ion-icon name='enter-outline'></ion-icon>
-                </h3>
-              </a>
-              <div className={classes.img}>
-                <img src={pics[i]} alt={titles[i]} />
-              </div>
-              <div className={classes.description}>
-                <p>{details[i].copy}</p>
-                <a
-                  href={details[i].github}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <ion-icon name='logo-github'></ion-icon>
-                </a>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      <h1>PROJECTS</h1>
+      <div className={classes.projects}>{renderProjects}</div>
     </section>
   );
 };

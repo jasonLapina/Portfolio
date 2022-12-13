@@ -4,18 +4,11 @@
   gap: 3.2rem;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   padding: 4rem 8rem;
-}
 
-.project {
-  position: relative;
-  border-radius: 2rem;
-  overflow: hidden;
-  background-color: var(--color-secondary);
-  box-shadow: 6px 6px 1rem var(--color-pink);
-  &:first-child {
+  .featured {
     @media screen and (min-width: 56.25em) {
-      grid-column: span 2;
-      grid-row: span 2;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
     }
     &::after {
       content: ' - FEATURED PROJECT - ';
@@ -26,6 +19,14 @@
       justify-content: center;
     }
   }
+}
+
+.project {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--color-secondary);
+  box-shadow: 6px 6px 1rem var(--color-pink);
 
   h3 {
     padding: 1rem 2rem;
