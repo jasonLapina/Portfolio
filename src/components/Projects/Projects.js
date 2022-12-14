@@ -10,7 +10,7 @@ const Projects = () => {
       );
       const data = await res.json();
 
-      const fetchedProjs = Object.values(data).reverse();
+      const fetchedProjs = Object.values(data);
       setProjects(fetchedProjs);
     };
     fetchProjects();
